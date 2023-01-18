@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
+/* Styling for the navbar */
+
+.navbar {
+    background-color: rgb(242, 255, 255);
+    height: 2.5rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar-item i{
+    color: #ff00009a;
+    font-size: 2rem;
+    transition: all 0.5s;
+    image-rendering: crisp-edges;
+    backface-visibility: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-search {
+    margin-left: 10rem;
+    margin-top: .4rem;
+    width: 25vw;
+    border-color: #ff00004a;
+    background-color: aliceblue;
+    transition: all 0.5ms;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.nav-search:hover {
+    border-color: #FF0000;
+    background-color: aliceblue;
+    box-shadow: 1px 1px 5px rgb(255, 0, 0);
 }
 
-.App-link {
-  color: #61dafb;
+.nav-search:focus {
+    width: 25vw;
+    border-color: #FF0000;
+    background-color: aliceblue;
+    box-shadow: 1px 1px 5px rgb(255, 0, 0);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.navbar-brand {
+    width: 120px;
+    padding: .3rem;
+    margin-right: 1rem;
+
 }
+
+.navbar-item i:hover{
+    color: #FF0000;
+    transform: scale(1.02);
+}
+
+.navbar-end {
+    margin-right: 2rem;
+}
+
+a.navbar-item {
+    color: #ff00008d;
+    font-weight: bolder;
+}
+
+/* End of navbar styling */
